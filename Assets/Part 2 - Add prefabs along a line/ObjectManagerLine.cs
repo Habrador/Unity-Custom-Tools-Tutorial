@@ -18,8 +18,8 @@ public class ObjectManagerLine : MonoBehaviour
     //You can increase the size if you want to have a gap between the objects
     public float objectSize;
 
-    //Where is the line ending? It starts at the position of the gameobject the script is attached to
-    public Vector3 endOfLinePos;
+    //We are adding prefabs between these points
+    public List<Vector3> waypoints = new List<Vector3>();
 
 
 
@@ -38,5 +38,19 @@ public class ObjectManagerLine : MonoBehaviour
         }
 
         return allChildren;
+    }
+
+
+
+    //Update the first object
+    public void UpdateFirstObject()
+    {
+        //The direction between the points
+        Vector3 direction = (waypoints[1] - waypoints[0]).normalized;
+
+        //The first object should look at the end position
+        firstObject.transform.forward = direction;
+
+        firstObject.transform.position = waypoints[0];
     }
 }
