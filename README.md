@@ -1,8 +1,8 @@
 # Unity Custom Tools Tutorial
 
-Source code for my custom tools tutorials in Unity: https://www.habrador.com/tutorials/editor-scripting/ 
+Source code for my custom tools tutorial in Unity: https://www.habrador.com/tutorials/editor-scripting/ 
 
-Notice that the source code is not exactly the same as in the tutorials because it's easier to update the code on GitHub, but the basic idea is the same. 
+Notice that the source code is not exactly the same as in the tutorial because it's easier to update the code on GitHub, but the basic idea is the same. 
 
 
 ## Part 1. Add prefabs within circle
